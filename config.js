@@ -175,7 +175,7 @@ const CONFIG = {
     description: "Professional website showcasing John Ivan Busulwa's expertise in venture capital, product management, and business development. View portfolio, experience, and connect for opportunities.",
     keywords: "venture capital, product management, business development, entrepreneurship, investment analysis, John Ivan Busulwa",
     author: "John Ivan Busulwa",
-    ogImage: "https://via.placeholder.com/1200x630/2c5aa0/ffffff?text=John+Ivan+Busulwa" // Add your Open Graph image
+    ogImage: "images/headshot.jpg" // Add your Open Graph image
   }
 };
 
