@@ -1,236 +1,343 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Ivan Busulwa | Personal Website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .section {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
-        .section-title {
-            font-size: 2.25rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-        }
-    </style>
+    <title id="page-title">John Ivan Busulwa - Professional Website</title>
+    <meta name="description" id="page-description" content="Professional website showcasing John Ivan Busulwa's expertise in venture capital, product management, and business development.">
+    <meta name="keywords" id="page-keywords" content="venture capital, product management, business development, entrepreneurship, investment analysis, John Ivan Busulwa">
+    <meta name="author" id="page-author" content="John Ivan Busulwa">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" id="og-title" content="John Ivan Busulwa - Professional Website">
+    <meta property="og:description" id="og-description" content="Professional website showcasing expertise in venture capital, product management, and business development.">
+    <meta property="og:image" id="og-image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/vibecoding-intro-realjohnivan">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="John Ivan Busulwa - Professional Website">
+    <meta name="twitter:description" id="twitter-description" content="Professional website showcasing expertise in venture capital, product management, and business development.">
+    <meta name="twitter:image" id="twitter-image" content="images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Header & Navigation -->
-    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-xl font-bold text-gray-900">John Ivan Busulwa</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-                <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors">Experience</a>
-                <a href="#education" class="text-gray-600 hover:text-blue-600 transition-colors">Education</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
-            </nav>
-            <button id="mobile-menu-button" class="md:hidden">
-                <i data-lucide="menu"></i>
-            </button>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" id="nav-name">John Ivan Busulwa</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" id="nav-home">Home</a>
+                <a href="#about" class="nav-link" id="nav-about">About</a>
+                <a href="#portfolio" class="nav-link" id="nav-portfolio">Portfolio</a>
+                <a href="#leadership" class="nav-link" id="nav-leadership">Leadership</a>
+                <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
-            <a href="#experience" class="block py-2 text-gray-600 hover:text-blue-600">Experience</a>
-            <a href="#education" class="block py-2 text-gray-600 hover:text-blue-600">Education</a>
-            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 id="hero-title">Welcome to My Professional Journey</h1>
+                    <p id="hero-subtitle">Building bridges between innovation and impact</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary" id="cta-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary" id="cta-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/headshot.jpg" alt="John Ivan Busulwa" id="hero-headshot" class="headshot">
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-1">5+</span>
+                    <span class="stat-label" id="stat-label-1">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-2">10+</span>
+                    <span class="stat-label" id="stat-label-2">Projects Led</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-3">3</span>
+                    <span class="stat-label" id="stat-label-3">Leadership Roles</span>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="bg-white">
-            <div class="container mx-auto px-6 py-20 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">John Ivan Busulwa</h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                    Master's Student at the University of Notre Dame | Innovation, Technology & Entrepreneurship
-                </p>
-                <div class="mt-8 flex justify-center space-x-4">
-                    <a href="mailto:jbusulwa@nd.edu" class="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105 shadow-lg">
-                        Get in Touch
-                    </a>
-                    <a href="https://linkedin.com/in/busulwa" target="_blank" class="bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg hover:bg-gray-300 transition-transform transform hover:scale-105 shadow-lg">
-                        LinkedIn
-                    </a>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="about-title">About Me</h2>
+                <p id="about-bio">A multidisciplinary professional transitioning into tech-focused roles in venture capital, product management, and business development. Passionate about innovation, entrepreneurship, and creating impact through strategic leadership.</p>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section container mx-auto px-6">
-            <h2 class="section-title text-center text-gray-900">About Me</h2>
-            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-md">
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    I am a multidisciplinary professional with a legal background and hands-on experience in private equity, currently pursuing a Master's in Innovation, Technology, and Entrepreneurship at the University of Notre Dame. I am actively transitioning into tech-focused roles in venture capital, product management, and business development.
-                </p>
-                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                    To deepen my financial and valuation expertise, I am completing my FMVA certification at the Corporate Finance Institute. My journey has equipped me with a unique blend of legal acumen, financial modeling skills, and a passion for driving innovation.
-                </p>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title text-center text-gray-900">Professional Experience</h2>
-                <div class="max-w-4xl mx-auto space-y-8">
-                    
-                    <!-- Lendtech Innovations Ltd -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900">Co-founder, CEO & Company Secretary</h3>
-                                <p class="text-md text-blue-600 font-medium">Lendtech Innovations Ltd</p>
-                            </div>
-                            <span class="text-sm text-gray-500 text-right">Sep 2024 - Present<br>Kampala, Uganda</span>
+            
+            <div class="about-content">
+                <div class="about-grid">
+                    <!-- Education -->
+                    <div class="about-card">
+                        <h3 id="education-title">Education</h3>
+                        <div class="education-item">
+                            <h4 id="degree-1">Bachelor's Degree</h4>
+                            <p id="institution-1">Your University</p>
+                            <span id="year-1">2020</span>
+                            <p id="education-desc-1">Relevant coursework and achievements</p>
                         </div>
-                        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-                            <li>Led a cross-functional team of 5 in successfully automating credit management for microfinance institutions.</li>
-                            <li>Drove business growth, scaling operations to facilitate $400k worth of loans within just 3 months of launch.</li>
-                            <li>Spearheaded company incorporation, drafting and filing 10 critical formation documents.</li>
-                            <li>Established a comprehensive regulatory compliance framework, securing crucial integrations with payment processors like Flutterwave.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Inua Capital Limited -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900">Investment Analyst</h3>
-                                <p class="text-md text-blue-600 font-medium">INUA CAPITAL LIMITED</p>
-                            </div>
-                            <span class="text-sm text-gray-500 text-right">Jan - Apr 2025<br>Kampala, Uganda</span>
-                        </div>
-                        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-                            <li>Developed financial models to support decision and analysis of 4 potential investment opportunities.</li>
-                            <li>Led comprehensive due diligence for 5 prospective investments, analyzing legal, ESG, and financial dimensions.</li>
-                            <li>Personally sourced and vetted 650 potential investments, building and managing a full deal pipeline.</li>
-                        </ul>
                     </div>
                     
-                    <!-- Uganda Investment Authority -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900">Legal Officer - Clerkship</h3>
-                                <p class="text-md text-blue-600 font-medium">Uganda Investment Authority</p>
+                    <!-- Experience -->
+                    <div class="about-card">
+                        <h3 id="experience-title">Professional Experience</h3>
+                        <div class="experience-item">
+                            <h4 id="position-1">Your Current Role</h4>
+                            <p id="company-1">Company Name</p>
+                            <span id="period-1">2022 - Present</span>
+                            <p id="experience-desc-1">Key responsibilities and achievements</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills -->
+                <div class="skills-section">
+                    <h3 id="skills-title">Core Competencies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4 id="skill-cat-1">Business Development</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag" id="skill-1-1">Strategic Planning</span>
+                                <span class="skill-tag" id="skill-1-2">Market Analysis</span>
+                                <span class="skill-tag" id="skill-1-3">Partnership Development</span>
                             </div>
-                            <span class="text-sm text-gray-500 text-right">Jul - Oct 2024<br>Kampala, Uganda</span>
                         </div>
-                        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-                            <li>Drafted 50+ critical legal opinions that directly informed the Authority's operational and strategic decision-making.</li>
-                            <li>Reviewed internal Authority policies such as HR, Land Allocation Guidelines, and the Board of Directors Manual.</li>
-                            <li>Drafted pivotal Investment Code Regulations governing reviews, appeals, and investments.</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title text-center text-gray-900">Education</h2>
-                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h3 class="text-xl font-bold text-gray-900">University of Notre Dame</h3>
-                        <p class="text-md text-blue-600 font-medium">Master of Science, ESTEEM</p>
-                        <p class="text-sm text-gray-500 mt-1">Notre Dame, IN | Expected May 2026</p>
-                        <p class="mt-3 text-gray-700">Awarded a partial tuition scholarship for academic achievement and professional experience.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h3 class="text-xl font-bold text-gray-900">Makerere University</h3>
-                        <p class="text-md text-blue-600 font-medium">Bachelor of Laws (LLB)</p>
-                        <p class="text-sm text-gray-500 mt-1">Kampala, Uganda | Dec 2023</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills & Interests -->
-        <section id="skills" class="section bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title text-center text-gray-900">Skills & Interests</h2>
-                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Computer Skills</h3>
-                        <div class="flex flex-wrap justify-center gap-3">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Figma</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Adobe XD</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Buffer</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Microsoft Office</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Google Suite</span>
-                             <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Airtable</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Notion</span>
+                        <div class="skill-category">
+                            <h4 id="skill-cat-2">Product Management</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag" id="skill-2-1">Product Strategy</span>
+                                <span class="skill-tag" id="skill-2-2">User Research</span>
+                                <span class="skill-tag" id="skill-2-3">Agile Methodologies</span>
+                            </div>
                         </div>
-                    </div>
-                     <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Interests</h3>
-                        <div class="flex flex-wrap justify-center gap-3">
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full">Reading & Writing</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full">UX Design</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full">Research</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full">Mentorship</span>
+                        <div class="skill-category">
+                            <h4 id="skill-cat-3">Venture Capital</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag" id="skill-3-1">Due Diligence</span>
+                                <span class="skill-tag" id="skill-3-2">Investment Analysis</span>
+                                <span class="skill-tag" id="skill-3-3">Portfolio Management</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="section-title text-gray-900">Get In Touch</h2>
-                <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-8">
-                    I'm currently seeking opportunities in venture capital, product management, and business development. Please feel free to connect with me.
-                </p>
-                <div class="flex justify-center items-center space-x-6">
-                    <a href="mailto:jbusulwa@nd.edu" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
-                        <i data-lucide="mail" class="w-6 h-6 mr-2"></i>
-                        <span class="text-lg">jbusulwa@nd.edu</span>
-                    </a>
-                    <a href="https://linkedin.com/in/busulwa" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
-                        <i data-lucide="linkedin" class="w-6 h-6 mr-2"></i>
-                        <span class="text-lg">LinkedIn</span>
-                    </a>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="portfolio-title">Portfolio & Projects</h2>
+                <p id="portfolio-subtitle">Key projects and achievements that showcase my expertise</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project1.jpg" alt="Project 1" id="project-img-1">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" id="project-link-1">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 id="project-title-1">Project Name 1</h3>
+                        <p id="project-category-1">Venture Capital</p>
+                        <p id="project-desc-1">Brief description of the project and your role</p>
+                        <div class="project-tech" id="project-tech-1">
+                            <span class="tech-tag">Analysis</span>
+                            <span class="tech-tag">Due Diligence</span>
+                            <span class="tech-tag">Investment Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project2.jpg" alt="Project 2" id="project-img-2">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" id="project-link-2">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 id="project-title-2">Project Name 2</h3>
+                        <p id="project-category-2">Product Management</p>
+                        <p id="project-desc-2">Brief description of the project and your role</p>
+                        <div class="project-tech" id="project-tech-2">
+                            <span class="tech-tag">Product Strategy</span>
+                            <span class="tech-tag">User Research</span>
+                            <span class="tech-tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project3.jpg" alt="Project 3" id="project-img-3">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" id="project-link-3">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 id="project-title-3">Project Name 3</h3>
+                        <p id="project-category-3">Business Development</p>
+                        <p id="project-desc-3">Brief description of the project and your role</p>
+                        <div class="project-tech" id="project-tech-3">
+                            <span class="tech-tag">Strategic Planning</span>
+                            <span class="tech-tag">Partnerships</span>
+                            <span class="tech-tag">Growth</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="leadership-title">Leadership & Service</h2>
+                <p id="leadership-subtitle">Contributing to communities and organizations</p>
+            </div>
+            
+            <div class="leadership-grid">
+                <div class="leadership-item">
+                    <div class="leadership-header">
+                        <h3 id="org-1">LÉO Africa Institute</h3>
+                        <span class="leadership-period" id="period-1">2023 - Present</span>
+                    </div>
+                    <h4 id="role-1">Your Role</h4>
+                    <p id="leadership-desc-1">Description of your contributions and impact</p>
+                    <ul class="achievements" id="achievements-1">
+                        <li>Achievement 1</li>
+                        <li>Achievement 2</li>
+                        <li>Achievement 3</li>
+                    </ul>
+                </div>
+                
+                <div class="leadership-item">
+                    <div class="leadership-header">
+                        <h3 id="org-2">SMACK Startups</h3>
+                        <span class="leadership-period" id="period-2">2022 - Present</span>
+                    </div>
+                    <h4 id="role-2">Your Role</h4>
+                    <p id="leadership-desc-2">Description of your contributions and impact</p>
+                    <ul class="achievements" id="achievements-2">
+                        <li>Achievement 1</li>
+                        <li>Achievement 2</li>
+                        <li>Achievement 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="contact-title">Get In Touch</h2>
+                <p id="contact-subtitle">Let's connect and explore opportunities together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p id="contact-email">johnivan@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="#" id="contact-linkedin">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h4>Availability</h4>
+                            <p id="contact-availability">Available for consulting and collaboration opportunities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" id="subject-label">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" id="message-label">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200">
-        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
-            <p>&copy; <span id="current-year"></span> John Ivan Busulwa. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p id="footer-copyright">© 2024 John Ivan Busulwa. All rights reserved.</p>
+                <p id="footer-built">Built with passion and attention to detail</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        lucide.createIcons();
-
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
