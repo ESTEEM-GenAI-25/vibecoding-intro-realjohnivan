@@ -11,7 +11,7 @@ const CONFIG = {
     linkedin: "https://linkedin.com/in/johnivan",
     location: "Kampala, Uganda",
     bio: "A multidisciplinary professional transitioning into tech-focused roles in venture capital, product management, and business development. Passionate about innovation, entrepreneurship, and creating impact through strategic leadership.",
-    headshot: "https://via.placeholder.com/300x300/2c5aa0/ffffff?text=Your+Photo", // Replace with your headshot image
+    headshot: "images/headshot.jpg", // Replace with your headshot image
     resume: "documents/resume.pdf" // Add your resume PDF
   },
 
